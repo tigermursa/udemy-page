@@ -16,7 +16,7 @@ const NavigationBar = () => {
             alt=""
           />
           <span className="me-3 ms-3">| </span>
-          <h2 className="font-semibold text-white ms-6">
+          <h2 className="font-semibold text-white ms-6 hidden md:block">
             Python Coding Projects Build a Web App Directory Discovery
           </h2>
         </div>
@@ -54,8 +54,8 @@ const NavigationBar = () => {
                   position="top"
                   arrow={true}
                   theme="light"
-                  trigger="click"
-                  arrowSize="big"
+                                  trigger="click"
+                                  arrowSize="big"
                 >
                   <p className="text-white text-xs ms-3 normal-case flex items-center gap-2">
                     Your progress{" "}
@@ -65,7 +65,7 @@ const NavigationBar = () => {
               </div>
             </label>
           </div>
-          <div className="flex items-center ">
+          <div className="flex items-center  hidden md:block">
             <button className="normal-case text-white btn btn-outline border-white rounded-none hover:border-white hover:bg-gray-700 hover:text-white">
               Share <FaShare />
             </button>

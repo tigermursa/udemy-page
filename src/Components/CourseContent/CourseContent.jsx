@@ -26,7 +26,7 @@ const CourseContent = () => {
             <div>
               <input type="checkbox" className="" />
             </div>
-            <div className="flex flex-col items-center text-black">
+            <div className="flex flex-col items-start text-black">
               <p>2.Hello World</p>
               <span className="flex items-center gap-1">
                 <MdOndemandVideo />
@@ -74,7 +74,7 @@ const CourseContent = () => {
             <div>
               <input type="checkbox" className="" />
             </div>
-            <div className="flex flex-col items-center text-black">
+            <div className="flex flex-col items-start text-black">
               <p>6.Operator</p>
               <span className="flex items-center gap-1">
                 <MdOndemandVideo />
@@ -86,7 +86,7 @@ const CourseContent = () => {
             <div>
               <input type="checkbox" className="" />
             </div>
-            <div className="flex flex-col items-center text-black">
+            <div className="flex flex-col items-start text-black">
               <p>7.Variables</p>
               <span className="flex items-center gap-1">
                 <MdOndemandVideo />
@@ -98,7 +98,7 @@ const CourseContent = () => {
             <div>
               <input type="checkbox" className="" />
             </div>
-            <div className="flex flex-col items-center text-black">
+            <div className="flex flex-col items-start text-black">
               <p>8.Strings</p>
               <span className="flex items-center gap-1">
                 <MdOndemandVideo />
@@ -110,7 +110,7 @@ const CourseContent = () => {
             <div>
               <input type="checkbox" className="" />
             </div>
-            <div className="flex flex-col items-center text-black">
+            <div className="flex flex-col items-start text-black">
               <p>9.Types</p>
               <span className="flex items-center gap-1">
                 <MdOndemandVideo />
@@ -122,7 +122,7 @@ const CourseContent = () => {
             <div>
               <input type="checkbox" className="" />
             </div>
-            <div className="flex flex-col items-center text-black">
+            <div className="flex flex-col items-start text-black">
               <p>10.Escape</p>
               <span className="flex items-center gap-1">
                 <MdOndemandVideo />
@@ -146,7 +146,7 @@ const CourseContent = () => {
             <div>
               <input type="checkbox" className="" />
             </div>
-            <div className="flex flex-col items-center text-black">
+            <div className="flex flex-col items-start text-black">
               <p>12.Strings</p>
               <span className="flex items-center gap-1">
                 <MdOndemandVideo />
@@ -158,7 +158,7 @@ const CourseContent = () => {
             <div>
               <input type="checkbox" className="" />
             </div>
-            <div className="flex flex-col items-center text-black">
+            <div className="flex flex-col items-start text-black">
               <p>13. Boolean</p>
               <span className="flex items-center gap-1">
                 <MdOndemandVideo />
@@ -230,7 +230,7 @@ const CourseContent = () => {
             <div>
               <input type="checkbox" className="" />
             </div>
-            <div className="flex flex-col items-startr text-black">
+            <div className="flex flex-col items-start text-black">
               <p>19.Args Kwargs</p>
               <span className="flex items-center gap-1">
                 <MdOndemandVideo />

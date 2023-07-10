@@ -17,15 +17,11 @@ const VideoPlayer = () => {
   };
 
   return (
-    <div
-      className={`video-player-wrapper border flex justify-between ${
-        isExpanded ? "expanded" : ""
-      }`}
-    >
+    <div className={`video-player-wrapper  flex justify-between ${isExpanded ? "expanded" : ""}`}>
       <ReactPlayer
         url="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
         width={isExpanded ? "80%" : "100%"}
-        height={isExpanded ? "650px" : "800px"}
+        height={isExpanded ? "650px" : "740px"}
         controls
         className="react-player"
       />
@@ -34,7 +30,7 @@ const VideoPlayer = () => {
           <AiOutlineDoubleRight className="absolute right-96 me-5 font-extrabold text-4xl" />
         </button>
       ) : (
-        <button className="expand-button" onClick={handleExpandClick}>
+        <button className="expand-button hidden md:block" onClick={handleExpandClick}>
           <div className=" border -right-36 top-10 absolute  flex p-2 hover:-right-3 transition-all duration-500">
             <BsArrowLeftShort className="text-3xl me-5" />{" "}
             <p className="font-bold text-white pe-5">Course Content</p>
@@ -43,7 +39,7 @@ const VideoPlayer = () => {
       )}
 
       {isExpanded && (
-        <div className="absolute right-0">
+        <div className="absolute right-0 hidden md:block">
           <CourseContent />
         </div>
       )}

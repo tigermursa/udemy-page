@@ -5,15 +5,20 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import Home from "./Components/Home/Home.jsx";
 import CourseContent from "./Components/CourseContent/CourseContent.jsx";
+import TabSection from "./Components/TabSection/TabSection.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home/>,
+    element: <Home />,
   },
   {
     path: "/con",
-    element: <CourseContent/>,
+    element: <CourseContent />,
+  },
+  {
+    path: "/tab",
+    element: <TabSection />,
   },
 ]);
 
