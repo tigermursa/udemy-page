@@ -12,7 +12,7 @@ const NavigationBar = () => {
         <div className="flex-1">
           <img
             className="w-24 ms-4"
-            src="/public/udemy-white new-preview.png"
+            src="/udemy-white new-preview.png"
             alt=""
           />
           <span className="me-3 ms-3">| </span>
@@ -54,8 +54,8 @@ const NavigationBar = () => {
                   position="top"
                   arrow={true}
                   theme="light"
-                                  trigger="click"
-                                  arrowSize="big"
+                  trigger="click"
+                  arrowSize="big"
                 >
                   <p className="text-white text-xs ms-3 normal-case flex items-center gap-2">
                     Your progress{" "}
@@ -65,12 +65,12 @@ const NavigationBar = () => {
               </div>
             </label>
           </div>
-          <div className="flex items-center  hidden md:block">
-            <button className="normal-case text-white btn btn-outline border-white rounded-none hover:border-white hover:bg-gray-700 hover:text-white">
+          <div className="flex items-center  justify-center ">
+            <button className="normal-case text-white btn btn-outline border-white rounded-none hover:border-white hover:bg-gray-700 hover:text-white ">
               Share <FaShare />
             </button>
-            <button className="text-white btn btn-outline p-0 w-10 border-white rounded-none hover:border-white hover:bg-gray-700 hover:text-white ms-2 me-3">
-              <BsThreeDotsVertical />
+            <button className="text-white btn btn-outline p-0 w-10 hidden md:block border-white rounded-none hover:border-white hover:bg-gray-700 hover:text-white ms-2 me-3">
+              <BsThreeDotsVertical className="ms-3" />
             </button>
           </div>
         </div>

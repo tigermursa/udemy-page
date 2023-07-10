@@ -36,8 +36,8 @@ const TabSection = () => {
             <div className="flex justify-center">
               <input
                 type="text"
-                placeholder=" Search Course Content"
-                className=" bg-white border border-black w-5/12 ps-10"
+                placeholder=" Search Course "
+                className=" bg-white border border-black w-5/12 md:ps-10 ps0"
               />
               <BsSearch className="bg-black text-5xl p-3 font-bold" />
             </div>

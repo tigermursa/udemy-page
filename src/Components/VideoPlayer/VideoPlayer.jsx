@@ -6,6 +6,7 @@ import CourseContent from "../CourseContent/CourseContent";
 import { AiOutlineDoubleRight } from "react-icons/ai";
 
 const VideoPlayer = () => {
+    // expand state
   const [isExpanded, setIsExpanded] = useState(false);
 
   const handleExpandClick = () => {
@@ -37,7 +38,7 @@ const VideoPlayer = () => {
           </div>
         </button>
       )}
-
+{/* course content list  */}
       {isExpanded && (
         <div className="absolute right-0 hidden md:block">
           <CourseContent />

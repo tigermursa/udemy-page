@@ -97,23 +97,27 @@ const Review = () => {
   return (
     <div className="bg-white p-6 text-black text-start md:ms-36 ms-0">
       <h2 className="text-xl font-bold">Student Feedback</h2>
-      <p className="text-sm text-gray-500">
-        Rating: {ratingOverview.averageRating} out of 5
-      </p>
-      <p className="text-sm text-gray-500 mb-4">Course Rating Reviews</p>
-
-      <div className="mb-6">
-        <p className="font-bold">Rating Overview</p>
-        <ul className="list-none mt-2">
-          {Object.entries(ratingOverview.ratings).map(([rating, count]) => (
-            <li key={rating} className="flex items-center">
-              <span className="w-4 h-4 bg-gray-300 rounded-full mr-2"></span>
-              <span className="text-sm text-gray-500">
-                {rating} star: {count} review{count !== 1 && "s"}
-              </span>
-            </li>
-          ))}
-        </ul>
+      <div className="flex gap-6">
+        {" "}
+        <div>
+          <p className="text-5xl font-bold mb-6 text-yellow-700">
+            Rating: {ratingOverview.averageRating} out of 5
+          </p>
+          <p className="text-sm text-gray-500 mb-4">Course Rating Reviews</p>
+        </div>
+        <div className="mb-6">
+          <p className="font-bold">Rating Overview</p>
+          <ul className="list-none mt-2">
+            {Object.entries(ratingOverview.ratings).map(([rating, count]) => (
+              <li key={rating} className="flex items-center">
+                <span className="w-4 h-4 bg-gray-300 rounded-full mr-2"></span>
+                <span className="text-sm text-gray-500">
+                  {rating} star: {count} review{count !== 1 && "s"}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
 
       {reviews.map((review, index) => (

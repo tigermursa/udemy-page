@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const Note = () => {
   const [note, setNote] = useState("");
   const [savedNote, setSavedNote] = useState("");
-  const [isEditing, setIsEditing] = useState(false);
+  const [isEditing, setIsEditing] = useState(true);
 
   const handleNoteChange = (e) => {
     const value = e.target.value;
@@ -20,10 +20,6 @@ const Note = () => {
   const handleCancelNote = () => {
     setNote(savedNote);
     setIsEditing(false);
-  };
-
-  const handleEditNote = () => {
-    setIsEditing(true);
   };
 
   return (
@@ -55,14 +51,7 @@ const Note = () => {
             Cancel
           </button>
         </div>
-      ) : (
-        <button
-          onClick={handleEditNote}
-          className="bg-black text-white px-4 py-2"
-        >
-          Take a note
-        </button>
-      )}
+      ) : null}
     </div>
   );
 };

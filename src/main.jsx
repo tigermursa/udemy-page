@@ -12,14 +12,6 @@ const router = createBrowserRouter([
     path: "/",
     element: <Home />,
   },
-  {
-    path: "/con",
-    element: <CourseContent />,
-  },
-  {
-    path: "/tab",
-    element: <TabSection />,
-  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
